@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+path=/path_to_project
+cd $path
+git pull
+gnome-terminal --full-screen --title "$path" --execute gvim
+godot -e $path
+
+
